@@ -85,6 +85,6 @@ class ColorController extends Controller
         $color = Color::findOrFail($id);
         $color->delete();
 
-        return 204;
+        return $id;
     }
 }
